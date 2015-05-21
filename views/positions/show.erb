@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kickball Positions</title>
+  </head>
+  <body>
+    <h1><%= position %></h1>
+    <ul>
+      <% teams_data.each do |team_name, roster| %>
+        <li>
+          <%= roster[position] %> (<%= team_name %>)
+        </li>
+      <% end %>
+    </ul>
+  </body>
+</html>

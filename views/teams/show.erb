@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Team Page</title>
+  </head>
+  <body>
+    <h1><%= team_name %></h1>
+    <ul>
+      <% roster.each do |position, player| %>
+        <li>
+          <%= position %>: <%= player %>
+        </li>
+      <% end %>
+    </ul>
+  </body>
+</html>

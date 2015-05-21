@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kickball Positions</title>
+  </head>
+  <body>
+    <h1>Positions</h1>
+    <ul>
+      <% positions.each do |pos| %>
+        <li>
+          <a href="/positions/<%= pos %>"><%= pos %></a>
+        </li>
+      <% end %>
+    </ul>
+  </body>
+</html>
